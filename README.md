@@ -1,12 +1,12 @@
-App listing all districts from City. Build-in support for Gdańsk and Kraków. 
+## App listing all districts from City. Build-in support for Gdańsk and Kraków. 
 
-Requirements: 
+### Requirements: 
 
 * php >= 7.2.5
 * mysql
 * and all pointed by composer php extensions
 
-Installation:
+### Installation:
 
 * composer install
 * php bin/console doctrine:database:create

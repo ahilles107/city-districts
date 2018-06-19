@@ -1,0 +1,5 @@
+easy_admin:
+    entities:
+        - App\Entity\District
+    list:
+        max_results: 55

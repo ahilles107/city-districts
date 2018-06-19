@@ -1,0 +1,18 @@
+parameters:
+    locale: 'en'
+
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        public: false
+
+    App\:
+        resource: '../src/*'
+        exclude: '../src/{Entity,Migrations,Tests,Kernel.php}'
+
+    App\Fetcher\GdanskDistrictFetcher:
+        tags: ['fetchers.add']
+
+    App\Fetcher\KrakowDistrictFetcher:
+        tags: ['fetchers.add']

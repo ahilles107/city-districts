@@ -55,5 +55,7 @@ class ChainFetcher implements FetcherInterface
                 return true;
             }
         }
+
+        return false;
     }
 }

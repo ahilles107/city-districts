@@ -50,11 +50,11 @@ class GdanskDistrictFetcher extends UrlFetcher implements FetcherInterface
      */
     public function isSupported(CityInterface $city): bool
     {
-       if ($city->getName() === self::CITY_NAME) {
-           return true;
-       }
+        if ($city->getName() === self::CITY_NAME) {
+            return true;
+        }
 
-       return false;
+        return false;
     }
 
     /**

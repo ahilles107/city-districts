@@ -80,7 +80,7 @@ class KrakowDistrictFetcher extends UrlFetcher implements FetcherInterface
         foreach ($districtDataNodes as $node) {
             $value = $node->nodeValue;
             if (false !== strpos($value, 'ha')) {
-                $data['area'] = round((float) str_replace(',', '.',  str_replace(' ha', '', $value)) / 100, 2);
+                $data['area'] = round((float) str_replace(',', '.', str_replace(' ha', '', $value)) / 100, 2);
             } else {
                 $data['population'] = (int) $value;
             }

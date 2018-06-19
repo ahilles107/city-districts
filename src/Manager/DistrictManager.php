@@ -56,7 +56,7 @@ class DistrictManager implements DistrictManagerInterface
         foreach ($districts as $district) {
             $foundDistricts = \array_filter(
                 $existingDistricts,
-                function ($d) use (&$district) {
+                function($d) use (&$district) {
                     return $d->getName() === $district['name'];
                 }
             );
